@@ -15,17 +15,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Lists all the users within the course.
+ * Lists all the participants in course.
  *
- * @package   local_culcourse_dashboard
- * @copyright 2020 Amanda Doughty
+ * @package   customscript implementation of participants list
+ * @copyright 2023 City University
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 use local_culcourse_dashboard\output\photoboard_tabs;
 use core_user\table\participants_search;
 
-//require_once('../../config.php');
 require_once($CFG->dirroot.'/user/lib.php');
 require_once($CFG->dirroot.'/course/lib.php');
 require_once($CFG->dirroot.'/notes/lib.php');
